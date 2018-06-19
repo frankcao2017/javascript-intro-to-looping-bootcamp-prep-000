@@ -8,9 +8,8 @@ for (var i = 0; i < 25; i++) {
 }
 
 function whileLoop(n) {
-  while ( n > 0 ) {
-    for (i = n; i > 0; i--) {
-    console.log("done");
-    }
+  while (n > 0) {
+    console.log(--n)
   }
+  return 'done'
 }
