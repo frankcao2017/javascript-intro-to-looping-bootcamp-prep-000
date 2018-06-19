@@ -15,17 +15,13 @@ function whileLoop(n) {
 }
 
 function doWhileLoop(arrays) {
+  function maybeTrue() {
+    return Math.random() >= 0.5
+  }
+
   do {
     arrays = arrays.pop()
-  } while (arrays.length > 0)
+  } while (arrays.length > 0 && maybeTrue())
 
   return arrays
 }
-
-function maybeTrue() {
-  return Math.random() >= 0.5
-}
- 
-do {
-  console.log('doo-bee-doo-bee-doo')
-} while (maybeTrue());
