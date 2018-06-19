@@ -13,3 +13,8 @@ function whileLoop(n) {
   }
   return 'done'
 }
+
+function doWhileLoop(arrays) {
+  do { arrays.shift() }
+  while (arrys.length < 0)
+}
