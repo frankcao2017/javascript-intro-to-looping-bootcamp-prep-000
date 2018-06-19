@@ -15,6 +15,6 @@ function whileLoop(n) {
 }
 
 function doWhileLoop(arrays) {
-  do { arrays.shift() }
+  do { arrys = arrays.shift(); }
   while (arrys.length < 0)
 }
