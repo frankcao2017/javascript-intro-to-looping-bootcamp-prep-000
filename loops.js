@@ -15,13 +15,9 @@ function whileLoop(n) {
 }
 
 function doWhileLoop(arrays) {
-  function maybeTrue() {
-    return Math.random() >= 0.5
-  }
-
   do {
     arrays = arrays.slice(1)
-  } while (arrays.length > 0 && maybeTrue())
+  } while (arrays.length > 0)
 
   return arrays
 }
