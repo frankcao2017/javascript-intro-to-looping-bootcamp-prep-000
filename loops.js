@@ -19,7 +19,7 @@ function doWhileLoop(arrays) {
     return Math.random() >= 0.5
   }
   do {
-    arrays = arrays.pop()
+    arrays.pop();
   } while (arrays.length > 0 && maybeTrue())
 
   return arrays
