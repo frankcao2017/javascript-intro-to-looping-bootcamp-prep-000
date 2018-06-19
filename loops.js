@@ -16,7 +16,7 @@ function whileLoop(n) {
 
 function doWhileLoop(arrays) {
   do {
-    arrays = arrays.slice(1)
+    arrays = arrays.pop()
   } while (arrays.length > 0)
 
   return arrays
