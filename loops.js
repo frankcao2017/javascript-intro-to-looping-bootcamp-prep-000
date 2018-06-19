@@ -15,7 +15,7 @@ function whileLoop(n) {
 }
 
 function doWhileLoop(arrays) {
-  do { arrys = arrays.shift(); }
+  do { arrys = arrays.pop(); }
   while (arrays.length > 0)
   return arrays
 }
