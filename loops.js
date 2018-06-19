@@ -13,11 +13,23 @@ function whileLoop(n) {
   }
   return 'done'
 }
-
+/*
 function doWhileLoop(arrays) {
   do {
     arrays = arrays.slice(1)
   } while (arrays.length > 0)
+
+  return arrays
+}
+*/
+function doWhileLoop(arrays) {
+  function maybeTrue() {
+    return Math.random() >= 0.5
+  }
+
+  do {
+    arrays = arrays.slice(1)
+  } while (arrays.length > 0 && maybeTrue())
 
   return arrays
 }
